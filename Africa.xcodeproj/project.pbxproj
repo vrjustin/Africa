@@ -29,6 +29,9 @@
 		1A3BAE792BACB184003498C5 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3BAE782BACB184003498C5 /* MapView.swift */; };
 		1A3BAE7B2BACB1A3003498C5 /* GalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3BAE7A2BACB1A3003498C5 /* GalleryView.swift */; };
 		1A3BAE7D2BACB1BB003498C5 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3BAE7C2BACB1BB003498C5 /* MainView.swift */; };
+		1A3BAE802BACB422003498C5 /* CoverImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3BAE7F2BACB422003498C5 /* CoverImageView.swift */; };
+		1A991FA62BAD8E030033B8DA /* CoverImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A991FA52BAD8E030033B8DA /* CoverImageModel.swift */; };
+		1A991FA92BAD8F950033B8DA /* CodableBundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A991FA82BAD8F950033B8DA /* CodableBundleExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +59,9 @@
 		1A3BAE782BACB184003498C5 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		1A3BAE7A2BACB1A3003498C5 /* GalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryView.swift; sourceTree = "<group>"; };
 		1A3BAE7C2BACB1BB003498C5 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		1A3BAE7F2BACB422003498C5 /* CoverImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverImageView.swift; sourceTree = "<group>"; };
+		1A991FA52BAD8E030033B8DA /* CoverImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverImageModel.swift; sourceTree = "<group>"; };
+		1A991FA82BAD8F950033B8DA /* CodableBundleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableBundleExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,7 +143,10 @@
 		1A3BAE742BACB104003498C5 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				1A991FA72BAD8F7B0033B8DA /* Extensions */,
+				1A991FA42BAD8DE20033B8DA /* Models */,
 				1A3BAE752BACB111003498C5 /* Views */,
+				1A3BAE7C2BACB1BB003498C5 /* MainView.swift */,
 				1A3BAE472BAC92A9003498C5 /* AfricaApp.swift */,
 			);
 			path = App;
@@ -146,13 +155,37 @@
 		1A3BAE752BACB111003498C5 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				1A3BAE7F2BACB422003498C5 /* CoverImageView.swift */,
+				1A3BAE7E2BACB410003498C5 /* TabRoots */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1A3BAE7E2BACB410003498C5 /* TabRoots */ = {
+			isa = PBXGroup;
+			children = (
 				1A3BAE762BACB15C003498C5 /* VideoListView.swift */,
 				1A3BAE782BACB184003498C5 /* MapView.swift */,
 				1A3BAE7A2BACB1A3003498C5 /* GalleryView.swift */,
 				1A3BAE492BAC92A9003498C5 /* ContentView.swift */,
-				1A3BAE7C2BACB1BB003498C5 /* MainView.swift */,
 			);
-			path = Views;
+			path = TabRoots;
+			sourceTree = "<group>";
+		};
+		1A991FA42BAD8DE20033B8DA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1A991FA52BAD8E030033B8DA /* CoverImageModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1A991FA72BAD8F7B0033B8DA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1A991FA82BAD8F950033B8DA /* CodableBundleExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,10 +274,13 @@
 			files = (
 				1A3BAE4A2BAC92A9003498C5 /* ContentView.swift in Sources */,
 				1A3BAE7D2BACB1BB003498C5 /* MainView.swift in Sources */,
+				1A3BAE802BACB422003498C5 /* CoverImageView.swift in Sources */,
+				1A991FA62BAD8E030033B8DA /* CoverImageModel.swift in Sources */,
 				1A3BAE792BACB184003498C5 /* MapView.swift in Sources */,
 				1A3BAE482BAC92A9003498C5 /* AfricaApp.swift in Sources */,
 				1A3BAE772BACB15C003498C5 /* VideoListView.swift in Sources */,
 				1A3BAE7B2BACB1A3003498C5 /* GalleryView.swift in Sources */,
+				1A991FA92BAD8F950033B8DA /* CodableBundleExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
